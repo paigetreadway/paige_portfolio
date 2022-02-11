@@ -4,11 +4,14 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation">
+      
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            React Multi-Page Website
-          </NavLink>
+      
+        <div className="container" style={{flexFlow: "row wrap"}}>
+          <div className="Name">
+            <h3 style={{ whiteSpace: "nowrap" }}> Dennis Morozov Portofolio </h3>
+          </div>
+
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -23,8 +26,18 @@ function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Contact
+                <NavLink className="nav-link" to="/resume">
+                  Resume
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/projects">
+                  Projects
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/art">
+                  Art
                 </NavLink>
               </li>
               <li className="nav-item">
