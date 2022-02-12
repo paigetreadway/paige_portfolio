@@ -1,33 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams } from "react-router";
 
-function Painting() {
+function Paintings() {
+  let { postSlug } = useParams();
+
+  useEffect(() => {
+    // Fetch post using the postSlug
+  }, [postSlug]);
+
   return (
     <div className="home">
       <div class="container">
-        <Link to="/art/painting-name">
-          <div class="row align-items-center my-5">
-            <div class="col-lg-7">
-              <img
-                class="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
-              />
-            </div>
-            <div class="col-lg-5">
-              <h1 class="font-weight-light">Painting Name</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-        </Link>
+        <h1 className="mt-5">Paiting Name</h1>
+        <h6 className="mb-5">The post slug is, {postSlug}</h6>
+        <p>
+        </p>
       </div>
     </div>
   );
 }
 
-export default Painting;
+export default Paintings;
