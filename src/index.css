@@ -20,7 +20,32 @@ a:hover {
   color: rgba(0, 0, 0, 0.349);
 }
 
-.row-custom{
+.icon {
+  max-height: 70px; 
+  max-width: 70px;
+}
+
+.owner-name {
+  color: dimgray;
+}
+
+.home {
+  background-image: url(components/home3.jpg);
+  background-size: cover;
+}
+
+body, html {
+  height: 100%;
+  }
+  .bg {
+  background-image: url(components/home3.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+/* .row-custom{
   background-color: aqua;
 }
 
@@ -30,4 +55,4 @@ a:hover {
 
 .experience-header{
   background-color: rgb(255, 174, 0);
-}
+} */

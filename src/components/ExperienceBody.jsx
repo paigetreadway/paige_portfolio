@@ -2,9 +2,7 @@ import React from "react";
 
 function ExperienceBody(props) {
   return (
-    <p>
-      {props.description}
-    </p>
+    <p>{props.description}</p>
   );
 }
 

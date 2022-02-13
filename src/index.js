@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
 import {
   Navigation,
   Footer,
@@ -19,10 +21,10 @@ import {
 } from "./components";
 
 ReactDOM.render(
-  <Router>
+  <Router >
     <Navigation />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home className="home" />} />
       <Route path="/about" element={<About />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />

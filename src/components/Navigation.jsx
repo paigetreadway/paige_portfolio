@@ -1,15 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../index.css";
 
 function Navigation() {
+
+  const resumeData = require('../assets/data.json');
+
   return (
     <div className="navigation">
-      
+
       <nav className="navbar navbar-expand navbar-dark bg-dark">
       
         <div className="container" style={{flexFlow: "row wrap"}}>
           <div className="Name">
-            <h3 style={{ whiteSpace: "nowrap" }}> Dennis Morozov Portofolio </h3>
+            <h3 class="owner-name" style={{ whiteSpace: "nowrap" }}> {resumeData.name} Portofolio </h3>
           </div>
 
           <div>
