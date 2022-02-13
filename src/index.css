@@ -19,3 +19,11 @@ a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.349);
 }
+
+.row-custom{
+  background-color: aqua;
+}
+
+.col-custom{
+  background-color: bisque;
+}

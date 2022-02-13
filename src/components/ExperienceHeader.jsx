@@ -1,17 +1,18 @@
 import React from "react";
 
-function ExperienceHeader() {
+function ExperienceHeader(props) {
   return (
-    <div className="about">
-      <div class="col-lg-5">
-        <h1 class="font-weight-light">About the company</h1>
+    <div className="experience-header">
+        <h2 class="font-weight-light">{props.position}</h2>
         <p>
-          Address
+        {props.companyName}
         </p>
         <p>
-          Dates
+        {props.location}
         </p>
-      </div>
+        <p>
+        {props.dates}
+        </p>
     </div>
   );
 }
