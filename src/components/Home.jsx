@@ -6,25 +6,27 @@ var sectionStyle = {
 };
 
 
-
 function Home() {
   const resumeData = require('../assets/data.json');
   return (
+    
     <div className="bg">
+      <div class="mask">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">{resumeData.home.heading}</h1>
-            <p>{resumeData.home.body}</p>
+        <div class="row align-items-center pt-5">
+          <div class="col-lg-auto">
+            <h1 class="mb-3">{resumeData.home.heading}</h1>
+            <p class="mb-3">{resumeData.home.body}</p>
+            <code className="py-code">
+              <span className="py-def">def </span> 
+              <span className="py-hwf">hello_word()</span>->
+              <span className="py-none">None</span>: <br/> &#8195; &#8195; 
+              <span className="py-print">print</span>(
+              <span className="py-hwt">"Hello World :)"</span>)
+              </code>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

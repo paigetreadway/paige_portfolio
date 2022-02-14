@@ -45,6 +45,42 @@ body, html {
   background-size: cover;
   }
 
+.mask {
+  background-color: rgba(255, 255, 255, 0.247);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.py-code{
+  color: rgb(27, 0, 27);
+  font-weight:bolder; 
+  font-style:italic;
+  font-size:14px;
+}
+
+.py-def {
+  color: rgb(185, 3, 155);
+}
+
+.py-hwf{
+  color: rgb(14, 4, 155);
+}
+
+.py-none{
+  color: rgb(185, 3, 155);
+}
+
+.py-print {
+  color: rgb(60, 0, 139);
+}
+
+.py-hwt {
+  color: darkgreen;
+}
+
+
 /* .row-custom{
   background-color: aqua;
 }
