@@ -3,10 +3,54 @@
     "name":"Dennis Morozov",
     "home":{
         "heading":"Thank you for your interest.",
-        "body":"Whether you are here as a recruiter, friend, or secrete admirer, welcome to my miniverse. I put this together part as a fun side project and part as establishing a bit of online presence. Enjoy the discovery!",
+        "body":"Whether you are here as a recruiter, friend, or secrete admirer, welcome to my miniverse. I put this together part as a fun side project and part as establishing a bit of an online presence. Enjoy the discovery!",
         "image":"home2.jpg"
     },
-    "about":{},
+    "about":{
+        "heading":"Hi, Here is a bit about me.",
+        "education":[
+            {"school":"Georgia Institute of Technology",
+            "degree":"Master of Science in Data Analytics",
+            "dates":"2019 - 2021"},
+            {"school":"University of Tennessee Knoxville",
+            "degree":"Bachelor of Mechanical Engineering",
+            "dates":"2012-2017"},
+            {"school":"Politecnico di Torino Italy",
+            "degree":"Mechanical Engineering Study Abroad",
+            "dates":"2017"}],
+        "body":"Describe some hobbies and maybe some more personal things I am interested in.",
+        "image":"personal_image.jpg",
+        "experiences":[
+            {
+                "icon":"aws-cp.png",
+                "title":"AWS Cloud Practitioner"
+            },
+            {
+                "icon":"python.png",
+                "title":"Python Working Experience"
+            },
+            {
+                "icon":"tensor-flow.png",
+                "title":"Tensor Flow"
+            },
+            {
+                "icon":"pytorch.png",
+                "title":"PyTorch"
+            },
+            {
+                "icon":"react.png",
+                "title":"React"
+            },
+            {
+                "icon":"flutter.png",
+                "title":"Flutter"
+            },
+            {
+                "icon":"hadoop.png",
+                "title":"Hadoop Ecosystem"
+            }
+        ]
+    },
     "resume":[
         {"position":"Python Developer and Data Scientist",
         "company":"Pratt and Whitney",

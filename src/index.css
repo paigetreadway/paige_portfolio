@@ -46,7 +46,7 @@ body, html {
   }
 
 .mask {
-  background-color: rgba(255, 255, 255, 0.247);
+  background-color: rgba(255, 255, 255, 0.199);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,6 +58,7 @@ body, html {
   font-weight:bolder; 
   font-style:italic;
   font-size:14px;
+  padding-top: 10px;
 }
 
 .py-def {
