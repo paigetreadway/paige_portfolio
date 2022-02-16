@@ -7,13 +7,13 @@ const IMG = (imgName) => {
 function ExperienceHeader(props) {
   return (
     <div class="experience-header">
-        <h2 class="font-weight-light">{props.position}</h2>
-        <p class="pull-right">{props.companyName}</p>
+        <h3 class="font-weight">{props.position}</h3>
+        <h5 class="pull-right">{props.companyName}</h5>
         <p>{props.location}</p>
         <p>{props.dates}</p>
         <img src={IMG(props.logo)} 
-          alt="image" 
-          class="img-responsive img-rounded icon"
+          alt="image"
+          class="img-resonsive img-rounded icon"
           ></img>
     </div>
   );

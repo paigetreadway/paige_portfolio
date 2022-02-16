@@ -81,6 +81,9 @@ body, html {
   color: darkgreen;
 }
 
+h2.resume_title {
+  color: darkslategrey;
+}
 
 /* .row-custom{
   background-color: aqua;

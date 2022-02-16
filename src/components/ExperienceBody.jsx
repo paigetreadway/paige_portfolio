@@ -2,7 +2,7 @@ import React from "react";
 
 function ExperienceBody(props) {
   return (
-    <p>{props.description}</p>
+    <p className="lead">{props.description}</p>
   );
 }
 
