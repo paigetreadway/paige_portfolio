@@ -22,10 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 .gitignore
-=======
-
 /src/assets/data.json
->>>>>>> c697475a7bc136aa2284c1b50a142ea131078215
 src/assets

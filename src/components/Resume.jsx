@@ -32,20 +32,40 @@ function ResumePage() {
     )
   }
 
-  const jobExperiences = resumeData.resume.map((job)=>{
+  const getEducation = (education)=>{
+    return (
+      <div className="contact">
+        <div class="col-sm-auto m-2 mt-4">
+          <h6 class="font-weight-normal">{education.degree}</h6>
+          <p class="font-weight-light">{education.school}</p>
+          <p class="font-weight-light">{education.dates}</p>
+        </div>
+    </div>
+    )
+  }
+
+  const jobExperiences = resumeData.resume.commercial.map((job)=>{
     return (getJobRow(job))
   })
 
+  const militaryExperiences = resumeData.resume.military.map((job)=>{
+    return (getJobRow(job))
+  })
+
+  const education = resumeData.resume.education.map((education)=>{
+    return (getEducation(education))
+  })
+
   return (
-    <div>
+    <div className="contact" class="ml-4">
       <br/>
       <h2 class="resume_title"><b>Work Experience</b></h2>
       {jobExperiences}
       <br/>
-      <h2 class="resume_title"><b>Military Experience</b></h2>
-      {getJobRow(resumeData.military[0])}
+      <h2 class="resume_title"><b>Military</b></h2>
+      {militaryExperiences}
       <h2 class="resume_title"><b>Education</b></h2>
-      {getJobRow(resumeData.education[0])}
+      {education}
     </div>
   )
 }

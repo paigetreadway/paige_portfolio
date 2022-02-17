@@ -17,16 +17,6 @@ function About() {
       <p>{exp.title}</p>
     </div>)});
 
-
-
-const education = about.education.map((edu)=>{
-  return ( 
-  <div class="col-sm-auto m-2">
-    <h6 class="font-weight-normal">{edu.degree}</h6>
-    <p class="font-weight-light">{edu.school}</p>
-    <p class="font-weight-light">{edu.dates}</p>
-  </div>)});
-
   return (
     <div className="about">
       <div class="container">
@@ -37,12 +27,6 @@ const education = about.education.map((edu)=>{
               src={IMG(about.image)} 
               alt=""
             />
-          </div>
-          <div class="col-lg-5">
-            <h4 class="font-weight-regular">{about.heading}</h4>
-            <p>{about.body}</p>
-            <h4 class="font-weight-light">Education</h4>
-            {education}
           </div>
         </div>
         <h4>Certifications and Experiences</h4><br/>
