@@ -81,8 +81,8 @@
             "description":"Description: Collected and analyzed Signals Intelligence (SIGINT) to identify relevant data. Generated intelligence reports in support of US military operations. Briefed Command level staff on situational intelligence gathered from SIGINT operations.",
             "logo":"guard-logo.png"}],
         "education":[
-            {"position":"Bachelors of Science - Computer Science",
-            "company":"Middle TN State University",
+            {"degree":"Bachelors of Science - Computer Science",
+            "school":"Middle TN State University",
             "dates":"2013 - 2019",
             "address":"Murfreesboro, TN 37129",
             "description":"Have not put anything here",

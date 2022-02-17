@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ReactGA from 'react-ga';
 
 import {
   Navigation,
@@ -19,9 +18,6 @@ import {
   Post,
   Posts,
 } from "./components";
-
-ReactGA.initialize('UA-110570651-1');
-ReactGA.pageview(window.location.pathname);
 
 ReactDOM.render(
   <Router >
