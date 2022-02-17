@@ -25,5 +25,5 @@ yarn-error.log*
 
 .gitignore
 /src/assets/data.json
-src/assets
+/src/assets
 
