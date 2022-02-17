@@ -20,7 +20,7 @@ function Home() {
             <div class="mt-5">
             <code className="py-code">
               <span className="py-def">def </span> 
-              <span className="py-hwf">hello_word()</span>
+              <span className="py-hwf">hello_word()-&gt;</span>
               <span className="py-none">None</span>: <br/> &#8195; &#8195; 
               <span className="py-print">print</span>(
               <span className="py-hwt">"Hello World :)"</span>)
