@@ -36,8 +36,17 @@
                 "title":"Flutter"
             },
             {
+                "icon":"spark.png",
+                "title":"Spark"
+            },            {
                 "icon":"hadoop.png",
-                "title":"Hadoop Ecosystem"
+                "title":"Hadoop"
+            },            {
+                "icon":"hive.png",
+                "title":"Hive"
+            },            {
+                "icon":"docker.png",
+                "title":"Docker"
             }
         ]
     },
