@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../index.css";
 
 function Navigation() {
@@ -7,45 +7,43 @@ function Navigation() {
   const resumeData = require('../assets/data.json');
 
   return (
-    <div className="navigation">
 
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-      
+    <div class="nav-container">
+      <nav className="navbar navbar-expand-lg" id = 'navbar'>
         <div className="container" style={{flexFlow: "row wrap"}}>
           <div className="Name">
-            <h3 class="owner-name" style={{ whiteSpace: "nowrap" }}> {resumeData.name} Portofolio </h3>
+            <Link to={'/about'}>
+            <h3 style={{ whiteSpace: "nowrap" }}> 
+              <span class="owner-name withhover">{resumeData.name}</span> <span class="owner-name">Portfolio</span> 
+            </h3>
+            </Link>
           </div>
 
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link font-weight-bold" to="/">
                   Home
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
+                <NavLink className="nav-link font-weight-bold" to="/about">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/resume">
+                <NavLink className="nav-link font-weight-bold" to="/resume">
                   Resume
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/projects">
+                <NavLink className="nav-link font-weight-bold" to="/projects">
                   Projects
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
-                  Blogs
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/art">
+                <NavLink className="nav-link font-weight-bold" to="/art">
                   Art
                 </NavLink>
               </li>
