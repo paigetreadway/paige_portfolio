@@ -1,13 +1,3 @@
-
-body {
-  margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -26,33 +16,33 @@ a:hover {
   max-width: 70px;
 }
 
-.owner-name {
-  color: dimgray;
+.painting {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.home {
-  background-image: url(components/home3.jpg);
-  background-size: cover;
+.center-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.owner-name {
+  color: rgb(0, 0, 0);
+}
+
+.owner-name.withhover:hover  {
+  color: rgb(85, 0, 78);
+  transition-duration: 0.2s;
 }
 
 body, html {
   height: 100%;
   }
-  .bg {
-  background-image: url(components/home3.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
 
-.mask {
-  background-color: rgba(255, 255, 255, 0.199);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .py-code{
   color: rgb(27, 0, 27);
@@ -93,14 +83,117 @@ h2.resume_title {
 }
 
 
-/* .row-custom{
-  background-color: aqua;
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
 
-.col-custom{
-  background-color: bisque;
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.experience-header{
-  background-color: rgb(255, 174, 0);
-} */
+.wrapper {
+  column-count: 1;
+  column-gap: 50px;
+  padding: 50px;
+}
+
+.personal-photo {
+  float: left;
+  width: 50%;
+  shape-outside: url(assets/personal_image.jpg);
+  shape-margin:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+body {
+background-color: whitesmoke;
+}
+
+
+.bg {
+  margin: 0;
+  background-image: url(components/home3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+
+.navbar:hover {
+  background-color: #3729758c;
+  transition-duration: 0.4s;
+
+}
+
+.nav-link:hover {
+  background-color: #3729758c;
+  color:#f3f3f3;
+  transition-duration: 0.4s;
+
+}
+
+
+.row-resume {
+  background-color: #ffffff;
+}
+
+.resume-margine {
+  margin: 2px;
+}
+
+.resume {
+  background-color: rgba(253, 238, 238, 0.5);
+}
+
+.projects {
+  background-color: rgba(253, 238, 238, 0.5);
+}
+.project-image {
+  border: 1px solid rgb(27, 27, 27);
+}
+.project {
+  background-color: #f3f3f3;
+}
+
+.art {
+  background-color: rgba(253, 238, 238, 0.5);
+}
+
+.about {
+  background-color: rgba(253, 238, 238, 0.5);
+}
+
+.home {
+  background-color: rgba(254, 240, 255, 0.541);
+}
+
+.home-div {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+
+
+.painting-div {
+  position:relative;
+  height: 100%;
+  width:100%;
+}
+
+.center-home {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
