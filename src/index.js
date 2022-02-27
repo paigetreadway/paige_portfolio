@@ -16,7 +16,6 @@ import {
 
 ReactDOM.render(
   <Router >
-    <div class="bg-image"></div>
     <Navigation />
     <Routes>
       <Route path="/" element={<Home className="home" />} />

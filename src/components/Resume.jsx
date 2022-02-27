@@ -12,8 +12,8 @@ function ResumePage() {
   const getJobRow = (job)=>{
     return (
       <div className="contact">
-      <div class="row align-items-right resume-margine p-4 row-custom row-resume">
-        <div class="col-sm-4 mt-2 mb-2 ml-2 align-self-center col-custom">
+      <div class="row align-items-right resume-margine p-2 row-resume">
+        <div class="col-sm-4 mt-2 mb-2 ml-2 align-self-center">
           <ExperienceHeader 
           position={job.position}
           companyName={job.company}
@@ -54,19 +54,19 @@ function ResumePage() {
     return (getEducation(education))
   })
 
-  const experiences = resumeData.resume.experiences.map((exp)=>{
+  const technologies = resumeData.resume.experiences.map((exp)=>{
     return ( 
-    <div class="col-sm-auto mb-5" align="center">
+    <div class="col p-3" align="center">
       <img src={IMG(exp.icon)} class="img-rounded icon center-icon"/>
       <span class="align-bottom my-3">{exp.title}</span>
     </div>
     )});
 
   return (
-    <div class="container resume p-5">
+    <div class="container resume">
     <h3 class="resume_title resume-margine my-4"><b>Technologies</b></h3>
-        <div class="row align-items-end resume-margine p-3 row-resume">
-          {experiences}
+        <div class="technologies">
+          {technologies}
         </div>
     <h3 class="resume_title resume-margine my-4"><b>Education</b></h3>
     <div class="row align-items-right resume-margine p-3 row-resume">

@@ -24,10 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .gitignore
-<<<<<<< HEAD
 assets/
-=======
 /src/assets/data.json
 /src/assets
-
->>>>>>> c21c2dd1ee4b6965ec5ef5cb7b756962313ba3c3

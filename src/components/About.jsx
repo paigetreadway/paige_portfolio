@@ -11,7 +11,7 @@ function About() {
 
   const connections = about.connections.map((connection)=>{
     return (
-      <div class="col-sm-auto center-block my-">
+      <div class="connection">
         <SocialIcon network={connection.network} 
         url={connection.url} />
       </div>
@@ -27,13 +27,13 @@ function About() {
 
   return (
     <div class="container">
-      <div class="about p-5">
-      <div class="row d-flex justify-content-center">
+      <div class="about">
+      <div class="row d-flex connections">
           {connections}
       </div> 
       <div class="wrapper">
         <img
-          class="img-fluid rounded mb-4 mb-lg-0 personal-photo"
+          class="img-fluid rounded mb-4 personal-photo"
           src={IMG(about.image)} 
           alt=""
         />

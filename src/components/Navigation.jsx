@@ -7,20 +7,18 @@ function Navigation() {
   const resumeData = require('../assets/data.json');
 
   return (
-
     <div class="nav-container">
-      <nav className="navbar navbar-expand-lg" id = 'navbar'>
-        <div className="container" style={{flexFlow: "row wrap"}}>
-          <div className="Name">
+      <nav className="navbar" id = 'navbar'>
+        <div class="navigation"> 
+          <div className="header-name">
             <Link to={'/about'}>
-            <h3 style={{ whiteSpace: "nowrap" }}> 
+            <h3> 
               <span class="owner-name withhover">{resumeData.name}</span> <span class="owner-name">Portfolio</span> 
             </h3>
             </Link>
           </div>
-
-          <div>
-            <ul className="navbar-nav ml-auto">
+          <div className="header-menu">
+            <ol className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink className="nav-link font-weight-bold" to="/">
                   Home
@@ -47,7 +45,7 @@ function Navigation() {
                   Art
                 </NavLink>
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </nav>

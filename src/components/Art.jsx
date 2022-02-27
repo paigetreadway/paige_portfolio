@@ -37,10 +37,7 @@ function Art() {
 
   return (
       <div class="container art">
-        <span class="align-bottom my-3 center-text resume-margine">
-          <h1 className="mt-5 text-center resume-margine">Artwork</h1>
-        </span>
-        <div class="row align-items-center my-5">
+        <div class="paintings">
             {images.map((src, index) => (
               <div class="col-lg-4">
               <img 
