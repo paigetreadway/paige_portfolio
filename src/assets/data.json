@@ -1,41 +1,36 @@
+
 {
-    "name":"Dennis Morozov",
+    "name":"Paige Treadway",
     "home":{
         "heading":"Thank you for your interest.",
-        "body":"Whether you are here as a recruiter, friend, or secret admirer, welcome to my mini-verse. I put this together part as a fun side project and part as establishing a bit of an online presence. Enjoy the discovery!",
+        "body":"Whether you are here as a recruiter, friend, or secrete admirer, welcome to my miniverse. I put this together part as a fun side project and part as establishing a bit of an online presence. Enjoy the discovery!",
         "image":"home2.jpg"
     },
     "about":{
-        "heading":"Hi, I'm Dennis",
-        "body":["I've been on a fun journey of following my academic and professional curiosity, which amounted to an interesting mix of skills and experiences. I will tell you about some of my favorites. First year in my bachelors, I started with a deep interest in art and culture, however after one year of architecture I realized that I had a lot of questions about the natural world that architecture may not be able to answer. I transferred to engineering school and graduated with a mechanical engineering degree. All the physics and math classes gave me a base of understanding for how the world works, and only fueled my continued interest for the natural world. I find engineering inspirational because it's the basic nuts and bolts, it is the industry that combines fun science and human ingenuity and solves real world complex problems. Engineering is tangible, impactful, creative yet governed by the same laws of physics that Aristotle, Galileo, and Einstein observed over the centuries.",
-            "Within the last 5 years, my mechanical engineering work slowly transitioned into more software and eventually data science. I learned that with software, unlike engineering, the develop-test cycle is instantaneous. One can learn a new skill, turn around, and apply it immediately.",
-            "The state of information technology as I saw it a few years ago, and as I still see it today, is mostly of awe. Imagine you land on a deserted alien planet with advanced infrastructure and technology that clearly served a critical role in their society. The alien civilization was quite wise and left many clues as to how to interact with the leftover technologies, how to maintain and build new technologies. Now, any person that is interested in IT and computer science can scour the alien artifacts and figure out how to take advantage of a truly astonishing technology that we inherited.",
-            "A transition from mechanical engineering to computer science didn't quiet seem natural yet. Dealing with data and optimization in every aspect of engineering, Data Science was quiet enticing and fascinating from the first moments I became aware of the field. AI and machine learning techniques are world wonders that propelled us into an era of computer vision, computer learning, and AI. I started to transition into software development and data science projects. I finished my master’s in data science and Analytics in Fall of 2021 and I was lucky enough to graduate and have real life work experience at the same time. For the last several years, I spent most of my professional time developing AWS infrastructure, which yet again, took me on a fun track of discovering a completely new field. Cloud application and distributed processing work is incredibly rewarding and clearly an important part of the near future."],
+        "heading":"Hi, Here is a little about me.",
+        "body":["Describe some hobbies and maybe some more personal things I am interested in."],
         "image":"personal_image.jpg",
         "connections":[
             {
-                "network":"linkedin",
-                "url":"https://www.linkedin.com/in/dennis-alexander-morozov"
+                "network": "linkedin",
+                "url": ""
             },
             {
-                "network":"github",
-                "url":"https://github.com/dennismdan/"
-            },
-            {
-                "network":"email",
-                "url":"mailto:dennismdan@gmail.com"
+                "network": "email",
+                "url": ""
             }
         ]
+        
     },
     "resume":{
         "experiences":[
             {
                 "icon":"aws-cp.png",
-                "title":"AWS"
+                "title":"AWS Cloud Practitioner"
             },
             {
                 "icon":"python.png",
-                "title":"Python"
+                "title":"Python Working Experience"
             },
             {
                 "icon":"tensor-flow.png",
@@ -54,135 +49,43 @@
                 "title":"Flutter"
             },
             {
-                "icon":"spark.png",
-                "title":""
-            },            {
                 "icon":"hadoop.png",
-                "title":""
-            },            {
-                "icon":"hive.png",
-                "title":""
-            },            {
-                "icon":"docker.png",
-                "title":""}
-        ],
+                "title":"Hadoop Ecosystem"
+            }],
         "commercial":[
-            {"position":"Python Developer and Data Scientist",
-            "company":"Pratt and Whitney",
-            "dates":"Jan 2020 - Present",
-            "address":"East Hartford, CT 06118",
-            "description":"Architects and develops AWS infrastructure for various data processing and engineering applications. Designs, develops, and maintains an in-house python application that tests algorithms on bigdata before the algorithms are deployed into the field. Implements machine learning pipelines using Spark and Dask on distributed platforms such as Hadoop and Fargate cluster. Performs various statistical analysis on full flight engine data. Extensive experience with many AWS services and serverless application development in the cloud.",
-            "logo":"pratt-logo.png"},
-            {"position":"Structures Engineer",
-            "company":"Pratt and Whitney",
-            "dates":"May 2019 – Jan 2020",
-            "address":"East Hartford, CT 06118",
-            "description":"Built ANSYS models to analyze the structural integrity of high-speed rotating parts. Performed low and high cycle fatigue analysis, and fracture mechanics for various types of alloys common in aerospace. Built and analyzed sub-models for critical and high stressed parts. Improved work processes and standards.",
-            "logo":"pratt-logo.png"},
-            {"position":"Mechanical System Design Engineer",
-            "company":"Pratt and Whitney",
-            "dates":"Sept 2017 – May 2019",
-            "address":"East Hartford, CT 06118",
-            "description":"Supported the design of gearbox, oil pump, and forward bearing compartment for a development jet engine, and performed design and assembly studies in NX environment. Managed component interfaces and led the workflow process in Team Center.",
-            "logo":"pratt-logo.png"},
-            {"position":"Mechanical Engineer Internship",
-            "company":"Bell Helicopters",
-            "dates":"May 2016 - Aug 2016",
-            "address":"Piney Flats, TN",
-            "description":"Researched, developed, and built prototype tooling. Designed dynamic part assemblies in Autodesk Inventor. Wrote and executed test plans and engaged in creative problem solving. Conducted dimensional, surface roughness, and temperature studies. Conducted preliminary research for system, material, and process upgrades.",
-            "logo":"bell-logo.png"},
-            {"position":"Quality Engineer Internship",
-            "company":"Nissan North America",
-            "dates":"May 2015 – Aug 2015",
-            "address":"Smyrna, TN",
-            "description":"Researched, developed, and built prototype tooling. Designed dynamic part assemblies in Autodesk Inventor. Wrote and executed test plans and engaged in creative problem solving. Conducted dimensional, surface roughness, and temperature studies. Conducted preliminary research for system, material, and process upgrades.",
-            "logo":"nissan-logo.png"}
-        ],
-        "military": [
-            {"position":"Human Intelligence Collector",
+            {"position":"Reverse Software Engineering Analyst",
+            "company":"Booz Allen Hamilton",
+            "dates":"November 2020 - Present",
+            "address":"Charlottesville, Virginia 22901",
+            "description":"Description: Applies software engineering expertise to perform in-depth technical evaluations of foreign computer and network technologies through the analysis and identification of software capabilities and vulnerabilities of specified non-US warfighting subsystems, using software program code disassembly and reverse engineering. Authors concise Scientific and Technical Intelligence (S&TI) assessments in conformance with the intelligence community (IC) analytic standards that convey the results of that analysis to the client's DoD and IC partners and clients.",
+            "logo":"bah_logo.jpg"},
+            
+            {"position":"Application Development Associate",
+            "company":"Accenture",
+            "dates":"February 2020 - November 2020",
+            "address":"Nashville, Tennessee 37209",
+            "description":"Description: Developed and maintained various application components. Worked with customer end users to understand specific business requirements and develop application front end functionality. Developed knowledge with object-oriented programming language, databases, web development, JavaScript, and HTML. Provided guidance on coding standards, problem resolution, and project delivery. ",
+            "logo":"accenture.png"},
+            
+            {"position":"Customer Service Staff",
+            "company":"Publix Supermarkets",
+            "dates":"January 2012 – February 2020",
+            "address":"Murfreesboro, TN 37129",
+            "description":"Description: Supervised junior staff; Managed cash stock and inventory balances. Performed store opening and store closing duties, including counting cash drawers and checking all equipment for proper functioning. ",
+            "logo":"publix_logo.png"}],
+        "military":[
+            {"position":"35N Signals Intelligence Analyst",
             "company":"Tennessee Army National Guard",
-            "dates":"2011 - 2017",
+            "dates":"2014 - 2020",
             "address":"Nashville, TN 37204",
-            "description":"Documented, compiled and generated intelligence reports. Operated and maintained intelligence equipment. Executed military orders with integrity, strong work ethic and commitment to excellence.",
-            "logo":"guard-logo.png"}
-        ],
+            "description":"Description: Collected and analyzed Signals Intelligence (SIGINT) to identify relevant data. Generated intelligence reports in support of US military operations. Briefed Command level staff on situational intelligence gathered from SIGINT operations.",
+            "logo":"guard-logo.png"}],
         "education":[
-            {"school":"Georgia Institute of Technology",
-            "degree":"Master of Science in Data Analytics",
-            "dates":"2019 - 2021"},
-            {"school":"University of Tennessee Knoxville",
-            "degree":"Bachelor of Mechanical Engineering",
-            "dates":"2012-2017"},
-            {"school":"Politecnico di Torino Italy",
-            "degree":"Mechanical Engineering Study Abroad",
-            "dates":"2017"}
-        ]
-    },
-    "art":[
-        {"img":"a1.jpg"},
-        {"img":"a2.jpg"},
-        {"img":"a3.jpg"},
-        {"img":"a4.jpg"},
-        {"img":"a5.jpg"},
-        {"img":"a6.jpg"},
-        {"img":"a7.jpg"},
-        {"img":"a8.jpg"},
-        {"img":"a9.jpg"},
-        {"img":"a10.jpg"},
-        {"img":"a11.jpg"},
-        {"img":"a12.jpg"},
-        {"img":"a13.jpg"},
-        {"img":"a14.jpg"},
-        {"img":"a15.jpg"},
-        {"img":"a16.jpg"},
-        {"img":"a17.jpg"},
-        {"img":"a18.jpg"},
-        {"img":"a19.jpg"},
-        {"img":"a20.jpg"},
-        {"img":"a21.jpg"},
-        {"img":"a22.jpg"},
-        {"img":"a23.jpg"},
-        {"img":"a24.jpg"},
-        {"img":"a25.jpg"},
-        {"img":"a26.jpg"},
-        {"img":"a27.jpg"}
-    ],
-    "projects":[
-        {
-            "title":"Recipe Explorer Network",
-            "description":"The recipe explorer presents users a novel way to explore recipes. The user inputs a set of ingredients into a text box, the user then selects how many recipes to return, then clicks run. The returned recipes graph is based on a k-means machine learning engine trained just for this project that matches user provided ingredients, with a mixed graph of recipes. The whole experience is meant to be exploratory. Users can then continue their discovery journey by selecting one of the returned recipes as input for new recipe recommendations.",
-            "url":"https://github.com/dennismdan/recipe_explorer",
-            "img":"https://user-images.githubusercontent.com/7568793/116161536-e96bff00-a6c1-11eb-8a62-946addbb24c0.png"
-        },
-        {
-            "title":"Car Dealership Client and Database",
-            "description":"Full stack application design that includes: a client that car dealership employees can interact with, backend functionality and full relational database design. This project was based on a database masters course and it implemented principals of relational data base design. The client and database interactions were developed with django, while the database was built with SQL",
-            "url":"https://github.com/dennismdan/car_dealership_database_proj",
-            "img":"https://user-images.githubusercontent.com/7568793/155134597-4d78cc06-5795-4ce6-ada2-e791a7301f85.png"
-        },
-        {
-            "title":"Twitter Sentiment Analysis",
-            "description":"Developed several natural language processing models (NLP) using TensorFlow and PyTorch and several neural networks architectures (transformers and CNNs) to How users interact and influence the sentiment on topics overall.",
-            "url":"https://github.com/dennismdan/twitter-sentiment-analysis",
-            "img":"https://user-images.githubusercontent.com/7568793/155136659-40568e8c-b07f-4f39-8469-3baed9efb12e.png"
-        },
-        {
-            "title":"Blog: Sentiment Analysis: Introduction with a Simple Technical Example.",
-            "description":"Sentiment analysis is the term used to study the general mood/feeling/ or sentiment of human language. It can also be applied to other fields (perhaps humpback whale mating songs) but we will only look at sentiment analysis of text.",
-            "url":"https://medium.com/analytics-vidhya/sentimental-analysis-introduction-with-a-simple-technical-example-f9abaed5e58a",
-            "img":"https://user-images.githubusercontent.com/7568793/155137831-9136addc-faad-418d-9149-c23df5db3cc6.png"
-        },
-        {
-            "title":"Blog: Tensordot — Multidimensional Dot Product — Explained.",
-            "description":"The multidimensional operator, axes destroyer and dimensional transformer, tensordot has earned its rightful place in the coliseum of super useful multi-dimensional matrix operators. Tensordot is a powerful tool for tensors (multi-dimensional matrices), but it can also be a bit elusive and seem slightly magical. The difficulty in gaining a robust intuition for tensordot is mostly due to the fact that if you need a tensordot operation, your mind is likely already dazed with keeping track of all the dimensions of a tensor. To get a full grasp of tensordots, it helps to start from simple matrices then slowly build an intuition all the way up to multidimensional operations.",
-            "url":"https://medium.com/analytics-vidhya/tensordot-explained-6673cfa5697f",
-            "img":"https://user-images.githubusercontent.com/7568793/155138650-18bdae9a-5f0f-462a-8475-5f28d9eed856.jpeg"
-        },
-        {
-            "title":"Blog: Sentiment Analysis of Twitter Text And Visualization Methods.",
-            "description":"Twitter has connected people to form rich online communities engaged in energetic, informative, and sometime misleading discussions. Imagine a basketball arena full of people huddled in smaller subgroups. Each subgroup is engaged in passionate conversations, talking away with each other and over each other. Some of the folks are holding calm conversations about their daily lives, others scream at each other in political protests, while in the right corner, next to the benches, a smaller group of folks recite poems leisurely. Conversations on twitter are rich in information, emotion and opinion, which lands tweets as a superb study for opinion mining and sentiment analysis.",
-            "url":"https://dennisalexandermorozov.medium.com/sentiment-analysis-of-twitter-text-and-visualization-methods-d6ab365ccfbc",
-            "img":"https://user-images.githubusercontent.com/7568793/155136644-5a8b3f39-6ea0-4ffd-9fc8-129690ad6d1d.png"
-        }
-    ]
+            {"degree":"Bachelors of Science - Computer Science",
+            "school":"Middle TN State University",
+            "dates":"2013 - 2019",
+            "address":"Murfreesboro, TN 37129",
+            "description":"Have not put anything here",
+            "logo":"mtsu.png"}]
+    }
 }
