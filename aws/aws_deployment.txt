@@ -1,0 +1,122 @@
+aws s3 mb --region us-east-1 "s3://dennis-morozov-portfolio" 
+
+aws s3api put-public-access-block ^
+    --bucket dennis-morozov-portfolio ^
+    --public-access-block-configuration "BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false"
+
+
+aws s3api put-bucket-policy ^
+--bucket dennis-morozov-portfolio ^
+--policy ^
+"{ ^
+  \"Version\": \"2012-10-17\", ^
+  \"Statement\": [ ^
+      { ^
+          \"Sid\": \"PublicReadGetObject\", ^
+          \"Effect\": \"Allow\", ^
+          \"Principal\": \"*\", ^
+          \"Action\": \"s3:GetObject\", ^
+          \"Resource\": \"arn:aws:s3:::dennis-morozov-portfolio/*\" ^
+      } ^
+  ] ^
+}"
+
+
+aws s3 website "s3://dennis-morozov-portfolio" --index-document index.html --error-document index.html
+
+
+aws s3 sync . "s3://dennis-morozov-portfolio/" 
+
+
+
+
+
+
+
+==========================
+https://www.youtube.com/watch?v=mls8tiiI3uc
+https://stuff-things.net/2017/05/03/creating-an-s3-website-redirect-from-the-cli/
+https://www.youtube.com/watch?v=9WPlC5RKfjs
+https://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-distribution.html
+https://aws-blog.io/2015/create-cloudfront-distribution/
+
+
+npm run build 
+
+aws acm request-certificate --domain-name dennismorozov.com --validation-method DNS --subject-alternative-names *.dennismorozov.com
+# paste the CNAME id and the full CNAME with domain name into DNS setting mapping 
+
+aws route53 create-hosted-zone --name dennismorozov.com --hosted-zone-config PrivateZone=false --region us-east-1
+
+# paste all dns services from route 53 to Nameservers with custom dns in Namecheap 
+
+
+aws s3 mb --region us-east-1 "s3://dennismorozov.com"
+aws s3 mb --region us-east-1 "s3://www.dennismorozov.com"
+ 
+
+redirect.json
+{
+    "RedirectAllRequestsTo": {
+        "HostName": "www.dennismorozov.com",
+        "Protocol": "https"
+    }
+}
+
+
+cd aws 
+aws s3api put-bucket-website --bucket dennismorozov.com --website-configuration file://redirect.json
+
+cd ../build 
+aws s3 sync . "s3://www.dennismorozov.com/"
+
+
+aws cloudfront create-cloud-front-origin-access-identity ^
+    --cloud-front-origin-access-identity-config ^
+        CallerReference="cli-example",Comment="Example OAI"
+
+
+
+
+aws route53 list-hosted-zones-by-name
+# get the hosted zone id 
+
+
+config.json
+{
+    "Comment":"CREATE a record",
+    "Changes":[{
+        "ResourceRecordSet":{
+            "Name":"www.dennismorozov.com",
+            "Type":"A",
+            "TTL":300,
+            "AliasTarget": {
+                "HostedZoneId": "hosted zone ID for your CloudFront distribution",
+                "DNSName": "DNS domain name for your CloudFront distribution"
+            "ResourceRecords":[{"value":"4.4.4.4}]
+        }
+    }]
+}
+
+
+aws route53 change-resource-record-sets --hosted-zone-id <enter id here> --change-batch file://config.json
+
+aws route53 get-change -id <change id> 
+
+
+aws s3 rm s3://www.dennismorozov.com --recursive
+aws s3 sync . "s3://www.dennismorozov.com/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

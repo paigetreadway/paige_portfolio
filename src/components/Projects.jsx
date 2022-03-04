@@ -1,28 +1,41 @@
 import React from "react";
 
 function Projects() {
+
+  const data = require('../assets/data.json');
+  const projects = data.projects
+
+  const IMG = (imgName) => {
+    return require (`../assets/${imgName}`)
+  }
+
+  const projectComponent = projects.map((project)=>{
+    return (
+        <a href={project.url}>
+          <div class="project mb-4">
+            <h3 class="font-weight-normal resume-margine text-center text-bold p-4">{project.title}</h3>
+            <div class="row align-items-center my-2 p-3">
+              <div class="col-md-7">
+                <img
+                  class="img-fluid rounded mb-4 mb-lg-0 resume-margine project-image"
+                  src={project.img}
+                  alt={project.title}
+                />
+              </div>
+              <div class="col-md-5">
+                <p>{project.description}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+    )
+  });
+
+
   return (
-    <div className="contact">
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Projects</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="container projects">
+      {projectComponent}
     </div>
   );
 }

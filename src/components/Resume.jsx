@@ -12,8 +12,8 @@ function ResumePage() {
   const getJobRow = (job)=>{
     return (
       <div className="contact">
-      <div class="row align-items-right mt-3 p-4 row-custom">
-        <div class="col-sm-4 mt-2 mb-2 ml-2 align-self-center col-custom">
+      <div class="row align-items-right resume-margine p-2 row-resume">
+        <div class="col-sm-4 mt-2 mb-2 ml-2 align-self-center">
           <ExperienceHeader 
           position={job.position}
           companyName={job.company}
@@ -34,13 +34,11 @@ function ResumePage() {
 
   const getEducation = (education)=>{
     return (
-      <div className="contact">
-        <div class="col-sm-auto m-2 mt-4">
-          <h6 class="font-weight-normal">{education.degree}</h6>
-          <p class="font-weight-light">{education.school}</p>
-          <p class="font-weight-light">{education.dates}</p>
+        <div class="col-sm-4">
+          <p class="font-weight-bold">{education.degree}</p>
+          <p>{education.school}</p>
+          <p>{education.dates}</p>
         </div>
-    </div>
     )
   }
 
@@ -56,17 +54,29 @@ function ResumePage() {
     return (getEducation(education))
   })
 
+  const technologies = resumeData.resume.experiences.map((exp)=>{
+    return ( 
+    <div class="col p-3" align="center">
+      <img src={IMG(exp.icon)} class="img-rounded icon center-icon"/>
+      <span class="align-bottom my-3">{exp.title}</span>
+    </div>
+    )});
+
   return (
-    <div className="contact" class="ml-4">
-      <br/>
-      <h2 class="resume_title"><b>Work Experience</b></h2>
-      {jobExperiences}
-      <br/>
-      <h2 class="resume_title"><b>Military</b></h2>
-      {militaryExperiences}
-      <h2 class="resume_title"><b>Education</b></h2>
+    <div class="container resume">
+    <h3 class="resume_title resume-margine my-4"><b>Technologies</b></h3>
+        <div class="technologies">
+          {technologies}
+        </div>
+    <h3 class="resume_title resume-margine my-4"><b>Education</b></h3>
+    <div class="row align-items-right resume-margine p-3 row-resume">
       {education}
     </div>
+    <h3 class="resume_title resume-margine my-4"><b>Work Experience</b></h3>
+      {jobExperiences}
+    <h3 class="resume_title resume-margine my-4"><b>Military</b></h3>
+      {militaryExperiences}
+    </div> 
   )
 }
 
