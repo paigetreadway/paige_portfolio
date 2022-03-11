@@ -35,16 +35,6 @@ function Navigation() {
                   Resume
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link font-weight-bold" to="/projects">
-                  Projects
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link font-weight-bold" to="/art">
-                  Art
-                </NavLink>
-              </li>
             </ol>
           </div>
         </div>

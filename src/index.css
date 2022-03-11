@@ -173,38 +173,6 @@ background-repeat: initial; */
   padding-left: 4%;
 }
 
-.projects {
-  background-color: rgba(253, 238, 238, 0.5);
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 4%;
-  padding-left: 4%;
-}
-.project-image {
-  border: 1px solid rgb(27, 27, 27);
-}
-.project {
-  background-color: #f3f3f3;
-}
-
-.art {
-  background-color: rgba(31, 37, 56, 0.5);
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 4%;
-  padding-left: 4%;
-}
-
-.paintings {
-  margin: auto;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
 .about {
   background-color: rgba(253, 238, 238, 0.7);
 }
@@ -333,7 +301,7 @@ body:after{
   left:0;
   right:0;
   z-index:-1; /* needed to keep in the background */
-  background: url(components/home3.jpg) center center;
+  background: url(components/home1.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

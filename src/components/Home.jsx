@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "./home3.jpg";
+import Background from "./home1.jpg";
 
 var sectionStyle = {
   backgroundImage: `url(${Background})`
